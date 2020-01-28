@@ -49,11 +49,6 @@
     <Compile Include="CloudToolsPackage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include=".gitattributes" />
-    <None Include=".gitignore" />
-    <None Include=".gitlab-ci.yml" />
-    <None Include="LICENSE" />
-    <None Include="README.md" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
