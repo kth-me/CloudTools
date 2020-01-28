@@ -4,7 +4,7 @@ Visual Studio/Code Package being developed in C♯/.NET
 
 ## Plan
 
-<img src="https://github.com/kth-me/Tool.Dev/blob/master/VS%20tool.jpg">
+<img src="https://github.com/kth-me/CloudTools/blob/master/VS%20tool.jpg">
 
 ## Installation
 
