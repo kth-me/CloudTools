@@ -1,0 +1,16 @@
+stages:
+  - build
+  - test
+  - deploy
+
+
+build:
+  stage: build
+  script:
+  - "dotnet build"
+  - "dotnet publish -c Release"
+
+unit_tests:
+  stage: test
+  script:
+  - "dotnet test"
