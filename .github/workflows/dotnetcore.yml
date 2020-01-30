@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: mcr.microsoft.com/dotnet/core/sdk:3.1-alpine
+    runs-on: alpine-latest
 
     steps:
     - uses: actions/checkout@v2
