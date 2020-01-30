@@ -8,6 +8,7 @@ namespace CloudTools
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.
+    /// This project has no implementation yet until repos are set up.
     /// </summary>
     /// <remarks>
     /// <para>
