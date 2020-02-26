@@ -13,7 +13,7 @@ jobs:
     - name: Build with dotnet
       working-directory: CloudToolsAPI
       run: |
-        dotnet restore
+        dotnet restore -s "nuget.config"
         dotnet build --configuration Release
     - name: Run Unit Test
       working-directory: CloudToolsUnitTesting
