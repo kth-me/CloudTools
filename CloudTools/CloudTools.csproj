@@ -49,6 +49,7 @@
     <Compile Include="CloudToolsPackage.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="nuget.config" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>

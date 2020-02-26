@@ -4,12 +4,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudTools", "CloudTools\CloudTools.csproj", "{AA94E710-1318-4C96-821D-FE02A0B9463C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudToolsAPI", "CloudToolsAPI\CloudToolsAPI.csproj", "{C5CA2D2A-2574-4DAC-80E9-0C198BED28E4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudToolsUnitTesting", "CloudToolsUnitTesting\CloudToolsUnitTesting.csproj", "{0DABB01F-1B25-4FB3-A96D-7DD6B2B0F41A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C5CA2D2A-2574-4DAC-80E9-0C198BED28E4} = {C5CA2D2A-2574-4DAC-80E9-0C198BED28E4}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudToolsAPI", "CloudToolsAPI\CloudToolsAPI.csproj", "{C5CA2D2A-2574-4DAC-80E9-0C198BED28E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudToolsUnitTesting", "CloudToolsUnitTesting\CloudToolsUnitTesting.csproj", "{0DABB01F-1B25-4FB3-A96D-7DD6B2B0F41A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C5CA2D2A-2574-4DAC-80E9-0C198BED28E4} = {C5CA2D2A-2574-4DAC-80E9-0C198BED28E4}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08CDFA32-F6C7-4072-83DF-FF6C3E6654F5}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
 	EndProjectSection
 EndProject
 Global
