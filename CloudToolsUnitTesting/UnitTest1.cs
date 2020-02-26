@@ -53,7 +53,7 @@ namespace CloudToolsUnitTesting
             Assert.IsTrue(LinqMath.Addition(randomNumbers) == result);
 
             // Good practice would dictate testing known results e.g
-            int[] numbers = new int[2]{ 0, 1 };
+            int[] numbers = new int[2] { 0, 1 };
             Assert.IsTrue(LinqMath.Addition(numbers) == 1);
             numbers = new int[3] { 0, 1, 2 };
             Assert.IsTrue(LinqMath.Addition(numbers) == 3);
