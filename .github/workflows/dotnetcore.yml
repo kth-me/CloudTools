@@ -12,10 +12,9 @@ jobs:
         dotnet-version: 3.1.100
 
     - name: Restore dotnet
+      env: GITHUB_PACKAGES_TOKEN : ${{ secrets.GITHUB_PACKAGES_TOKEN }}
       working-directory: CloudToolsAPI
-      run: |
-        nuget config -set GITHUB_PACKAGES_TOKEN=${{ secrets.GITHUB_PACKAGES_TOKEN }}
-        dotnet restore --configfile nuget.config
+      run: dotnet restore --configfile nuget.config
     - name: Build with dotnet
       working-directory: CloudToolsAPI
       run: dotnet build --configuration Release
