@@ -13,7 +13,7 @@ jobs:
 
     - name: Restore dotnet
       working-directory: CloudToolsAPI
-      run: dotnet restore configfile nuget.config
+      run: dotnet restore CloudToolsAPI.csproj configfile nuget.config
     - name: Build with dotnet
       working-directory: CloudToolsAPI
       run: dotnet build --configuration Release
