@@ -12,7 +12,9 @@ jobs:
         dotnet-version: 3.1.100
     - name: Build with dotnet
       working-directory: CloudToolsAPI
-      run: dotnet build --configuration Release
+      run: |
+      dotnet restore
+      dotnet build --configuration Release
     - name: Run Unit Test
       working-directory: CloudToolsUnitTesting
       run: dotnet test
