@@ -25,14 +25,15 @@ As per licensing, the tool is allowed commercially to develop projects and/or pl
 - JetBrains (TBD due to Language and interface limitations)
 
 ## Compatiable/Supported Git repos
-By having the tool compatible with numerous Git repos this will allow for company to configure prefence of code repos and allow fast mirroring. Below is the list of states of what repos are or are not compatiable or in progress:
+By having the tool compatible with numerous Git repos this will allow for company to configure prefence of code repos and allow fast mirroring. Below is the list of what repositories are in progress or planned for future integrations:
 - Git
 - GitLab
 - GitHub
 - BitBucket
 - Azure Devops
 - AWS CodeCommit
-Upon Git Mirroring and project management has been established, Team will most likely expand allowing for features to be assigned to developers.
+
+Upon Git Mirroring and project management has been established, Team will most likely expand allowing for features to be assigned to developers. Specific branches of this open source project will use this mirroring to automate distribution amongst the public repos. 
 
 ## Compatiable/Supported Cloud Services
 
