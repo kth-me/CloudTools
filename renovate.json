@@ -1,5 +1,20 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  "hostRules": [
+    {
+      "domainName": "github.com",
+      "encrypted": {
+        "token": "OKQeO/Z2Fd57I4IqHvDu8f9Rb6DNZZMmV8Zy/Aux8yKzGjcmgWMkMoEDLf11zu6+k4JJX2323NIc8JDDePjDvaP+HAxV9OJVlajCjXtZbVvcoe6q+T54eiThk1Q8b2KRfB6wC/pPKCA269k0SlPRaxMrlwlqQHavrxDVw4aGhjJjDa3Aqpa33s/3JyCIRGtLrdoVM1qUZDsnOTK41chfbLJ0VRNc1XOjrFIeLViz6YkPqRq8WNCjaBo1G/h62G3PIURSUixtidWbhMmmRCyuHP+lmL8k5smRUMLOdWXu/e13+12hk7KQSgFXSBI90TYqWKInmYRJEfiw2AyoddEopQ=="
+      }
+    }
+  ],
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ],
+  "schedule": "every weekday"
 }
