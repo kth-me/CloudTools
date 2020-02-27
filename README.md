@@ -40,7 +40,7 @@ Upon Git Mirroring and project management has been established, Team will most l
 - Azure (Piority 2 )
 - Google Cloud (Priority 3)
 
-## Continous Deployment Supported Languages for Cloud Computing
+## Continous Integration and Continous Deployment for Cloud Computing.
 This is being provided by the child open source project GitPipelines https://github.com/kth-me/GitPipelines
 This service will be designed to generate portable and configurable pipelines.
 
@@ -49,3 +49,4 @@ As this project will be Open source the standard for quality of code will be est
 
 ## License
 Released under the [GPL-3.0](LICENSE) license and <a href="https://en.m.wikipedia.org/wiki/Beerware">Beerware</a> license.
+All developers who contribute code aknowledges that they give up the rights and provide it as open source under the same licensing above.
