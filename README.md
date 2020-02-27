@@ -26,20 +26,23 @@ As per licensing, the tool is allowed commercially to develop projects and/or pl
 
 ## Compatiable/Supported Git repos
 By having the tool compatible with numerous Git repos this will allow for company to configure prefence of code repos and allow fast mirroring. Below is the list of states of what repos are or are not compatiable or in progress:
-- Git (Fail)
-- GitLab (Fail)
-- GitHub (Fail)
-- BitBucket (Fail)
+- Git
+- GitLab
+- GitHub
+- BitBucket
+- Azure Devops
+- AWS CodeCommit
 Upon Git Mirroring and project management has been established, Team will most likely expand allowing for features to be assigned to developers.
 
 ## Compatiable/Supported Cloud Services
 
 - AWS (Priority 1, Start after Git Mirroring is completed)
 - Azure (Piority 2 )
+- Google Cloud (Priority 3)
 
 ## Continous Deployment Supported Languages for Cloud Computing
-
-- None as of yet
+This is being provided by the child open source project GitPipelines https://github.com/kth-me/GitPipelines
+This service will be designed to generate portable and configurable pipelines.
 
 ## Our Service of Quality Code
 As this project will be Open source the standard for quality of code will be established early on and determiend by linting. In near future StyleCop will be implemented to the source code to standardise the coding style.
