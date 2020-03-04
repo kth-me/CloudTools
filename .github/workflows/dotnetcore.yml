@@ -1,25 +1,32 @@
 name: dotnetcore
-on: [push]
+on: 
+  push:
+    branches: 
+      - '*'
 jobs:
   build:
-    runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        os:
+        - ubuntu-latest
+        - windows-latest
+        - macos-latest
+    runs-on: ${{ matrix.os }}
+    
     steps:
     - uses: actions/checkout@v1
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.100
-
     - name: Restore dotnet
-      env: 
-        GITHUB_PACKAGES_TOKEN : ${{ secrets.GITHUB_PACKAGES_TOKEN }}
-        GITHUB_PACKAGES_USER : ${{ secrets.GITHUB_PACKAGES_USER }}
       working-directory: CloudToolsAPI
-      run: dotnet restore --configfile nuget.config
-    - name: Build with dotnet
-      working-directory: CloudToolsAPI
-      run: dotnet build --configuration Release
+      run: |-
+        dotnet restore --configfile nuget.config
+        dotnet build --configuration Release
     - name: Run Unit Test
       working-directory: CloudToolsUnitTesting
       run: dotnet test
+env: 
+    GITHUB_PACKAGES_TOKEN : ${{ secrets.GITHUB_PACKAGES_TOKEN }}
+    GITHUB_PACKAGES_USER : ${{ secrets.GITHUB_PACKAGES_USER }}
